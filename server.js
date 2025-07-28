@@ -12,7 +12,7 @@ server.use(express.json());
 server.use(methodOverride("_method"));
 server.use(express.static(path.join(__dirname, "public")));
 
-const mongo_path = "mongodb://127.0.0.1:27017/projectstudent";
+const mongo_path = "mongodb+srv://yash-gautam:<db_password>@cluster0.fkgcuhs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 database().then(() =>{
     console.log("Connected to database ");
