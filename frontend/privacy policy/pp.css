@@ -1,0 +1,82 @@
+/* Privacy Policy Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.privacy-policy {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  
+  .privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .policy-intro {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .policy-details h3 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .policy-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .policy-details a {
+    color: #1e3c72;
+    text-decoration: underline;
+  }
+  
+  .policy-details a:hover {
+    color: #0d2a4a;
+  }
+  
+  /* Responsive Privacy Policy Section */
+  @media (max-width: 768px) {
+    .privacy-policy h2 {
+      font-size: 2rem;
+    }
+  
+    .policy-intro {
+      font-size: 1rem;
+    }
+  
+    .policy-details h3 {
+      font-size: 1.3rem;
+    }
+  
+    .policy-details p {
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,104 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+/* Student Connection Services Section */
+.student-connection-services {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .student-connection-services h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+  }
+  
+  .services-intro {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card i {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-connection-services h2 {
+      font-size: 2rem;
+    }
+  
+    .services-intro {
+      font-size: 1rem;
+    }
+  
+    .service-card {
+      padding: 20px;
+    }
+  
+    .service-card i {
+      font-size: 2rem;
+    }
+  
+    .service-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .service-card p {
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.feedback {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.feedback h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.feedback p {
+    margin-bottom: 20px;
+    color: #555;
+}
+.feedback-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.submit-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background: #0056b3;
+}

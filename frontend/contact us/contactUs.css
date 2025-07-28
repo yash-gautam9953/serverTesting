@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+/* General Styles */
+  
+  /* Contact Us Section */
+  .contact-us {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+  }
+  
+  .contact-intro {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  /* Contact Information (Gmail Only) */
+  .contact-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-info ul li i {
+    margin-right: 10px;
+    color: #1e3c72;
+    font-size: 1.5rem;
+  }
+  
+  .contact-info ul li span {
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-us h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-intro {
+      font-size: 1rem;
+    }
+  
+    .contact-info h3 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-info ul li {
+      font-size: 1rem;
+    }
+  }

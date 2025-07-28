@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 91%
+  );
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.auth {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+/* Logo */
+.logo-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: white;
+  height: 4px;
+  width: 25px;
+  margin: 2px 0;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: black;
+    opacity: 0.8;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Main Section */
+main {
+  text-align: center;
+  margin-top: 100px; /* Adjust to avoid overlap with navbar */
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.leftsec {
+    height: 40vh;
+  width: 40%;
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.rightsec {
+  position: relative; /* Required for absolute positioning of the button */
+  width: 60%;
+  margin: 30px 0;
+}
+
+.rightsec img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+
+
+#element {
+  color:  rgba(0, 212, 255, 1);
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.button {
+   
+  padding: 10px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 91%
+  );
+    color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+ 
+}
+
+.button:hover {
+    background: rgba(0, 212, 255, 1);
+   color: white;
+
+}
+
+/* Infinite Scrolling Carousel */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  padding: 40px;
+}
+
+.carousel-container h1 {
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Infinite scroll effect */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+  .carousel {
+    gap: 1.5rem;
+    animation-duration: 25s;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel img {
+    width: 60px;
+    height: 60px;
+  }
+  .leftsec {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .rightsec {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 91%
+  );
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  cursor: pointer;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+/* Icons Section */
+.university-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.university-section img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.university-section img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Icons Section */
+@media (max-width: 768px) {
+  .university-section img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+
+/* section 2 */
+
+.section-2{
+    padding: 50px 0;  
+}
+
+.section-2-image{
+    height: 70vh;
+   border: 2px solid black;
+
+}
+.section-2-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+/* section 3*/
+
+.section-3{
+    padding: 50px 0; 
+}
